@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:skd AS build-env
+FROM microsoft/dotnet:sdk AS build-env
 COPY src /app
 WORKDIR /app
 
