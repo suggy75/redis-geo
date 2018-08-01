@@ -2,7 +2,7 @@ FROM microsoft/dotnet:sdk AS build-env
 COPY src /app
 WORKDIR /app
 
-RUN dotnet restore --configfile ../NuGet.Config
+RUN dotnet restore --configfile NuGet.Config
 RUN dotnet publish -c Release -o out
 
 # Build runtime image
